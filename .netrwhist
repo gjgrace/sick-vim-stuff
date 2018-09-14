@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/Users/gavingrace-lendingloop/Documents/lending-loop/config'
+let g:netrw_dirhist_2='/Users/gavingrace-lendingloop/Documents/lending-loop/lib'
+let g:netrw_dirhist_3='/Users/gavingrace-lendingloop/Documents/lending-loop'
+let g:netrw_dirhist_4='/Users/gavingrace-lendingloop/Documents/lending-loop/app/models/connect/accounts'
+let g:netrw_dirhist_5='/Users/gavingrace-lendingloop/Documents/lending-loop/lib'
+let g:netrw_dirhist_6='/Users/gavingrace-lendingloop/Documents/lending-loop/app/models'
+let g:netrw_dirhist_7='/Users/gavingrace-lendingloop/Documents/lending-loop-compliance/public'
+let g:netrw_dirhist_8='/Users/gavingrace-lendingloop/Documents/lending-loop/app/controllers'
