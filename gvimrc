@@ -4,9 +4,6 @@
 filetype off
 execute pathogen#infect()
 
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags
-
 syntax on
 :colorscheme monokai 
 set background=dark
