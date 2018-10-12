@@ -10,3 +10,6 @@
 [submodule "/Users/gavingrace-lendingloop/.vim/bundle/nerdtree-git-plugin"]
 	path = /Users/gavingrace-lendingloop/.vim/bundle/nerdtree-git-plugin
 	url = https://github.com/Xuyuanp/nerdtree-git-plugin.git
+[submodule "/Users/gavingrace-lendingloop/.vim/bundle/matchit"]
+	path = /Users/gavingrace-lendingloop/.vim/bundle/matchit
+	url = https://github.com/vimtaku/hl_matchit.vim.git

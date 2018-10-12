@@ -13,6 +13,7 @@ set guifont=Hack:h13
 set transparency=12
 " set blur=10
 
+runtime macros/matchit.vim
 
 filetype on " Enable filetype detection
 filetype indent on " Enable filetype-specific indenting
@@ -44,9 +45,9 @@ autocmd Filetype python setlocal ts=4 sts=4 sw=4
 
 map -a :call SyntaxAttr()<CR>
 
-map <C-j> <C-W>j
-map <C-k> <C-W>k
-map <C-h> <C-W>h
+map <C-k> <C-W>j
+map <C-i> <C-W>k
+map <C-j> <C-W>h
 map <C-l> <C-W>l
 
 :map Q <Nop>
@@ -60,6 +61,8 @@ let g:indentLine_leadingSpaceEnabled = 1
 let g:indentLine_leadingSpaceChar = '.'
 
 let g:bufExplorerShowRelativePath = 1
+
+let g:hl_matchit_enable_on_vim_startup = 1
 
 :set ic
 
