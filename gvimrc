@@ -10,7 +10,7 @@ set background=dark
 
 set guifont=Hack:h13
 
-set transparency=12
+set transparency=10
 " set blur=10
 
 runtime macros/matchit.vim

@@ -54,7 +54,7 @@ let colors_name = "monokai"
 if has("gui_running")
   let s:vmode      = "gui"
   let s:background = "#000000"
-  let s:foreground = "#E8E8E3"
+  let s:foreground = "#FFFFFF"
   let s:window     = "#64645e"
   let s:line       = "#383a3e"
   let s:linenr     = "#8F908A"
@@ -64,7 +64,7 @@ if has("gui_running")
   let s:comment    = "#00ddff"
   let s:error      = "#5f0000"
   let s:zentree    = "#8f8f8f"
-  
+
   let s:pink       = "#FF1493"
   let s:green      = "#00FF96"
   let s:aqua       = "#66d9ef"
@@ -72,7 +72,7 @@ if has("gui_running")
   let s:tan        = "#C79C6E"
   let s:orange     = "#FF7D0A"
   let s:purple     = "#A330C9"
-  let s:red        = "#E73C50"
+  let s:red        = "#C41F3B"
 
   let s:addfg      = "#d7ffaf"
   let s:addbg      = "#5f875f"
@@ -406,7 +406,7 @@ endif
 " ruby
 exe "hi! rubyInterpolationDelimiter"    .s:fg_none         .s:bg_none          .s:fmt_none
 exe "hi! rubyInstanceVariable"          .s:fg_none         .s:bg_none          .s:fmt_none
-exe "hi! rubyGlobalVariable"            .s:fg_none         .s:bg_none          .s:fmt_none
+exe "hi! rubyGlobalVariable"            .s:fg_red          .s:bg_none          .s:fmt_none
 exe "hi! rubyClassVariable"             .s:fg_none         .s:bg_none          .s:fmt_none
 exe "hi! rubyPseudoVariable"            .s:fg_none         .s:bg_none          .s:fmt_none
 exe "hi! rubyFunction"                  .s:fg_green        .s:bg_none          .s:fmt_none
