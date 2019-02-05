@@ -5,10 +5,10 @@ filetype off
 execute pathogen#infect()
 
 syntax on
-:colorscheme monokai 
+:colorscheme monokai
 set background=dark
 
-set guifont=Hack:h13
+set guifont=Hack:h12
 
 set transparency=10
 " set blur=10
@@ -49,6 +49,7 @@ map <C-k> <C-W>j
 map <C-i> <C-W>k
 map <C-j> <C-W>h
 map <C-l> <C-W>l
+map <C-n> :NERDTreeToggle<CR>
 
 :map Q <Nop>
 
@@ -77,6 +78,8 @@ let g:syntastic_ruby_checkers = ['rubocop']
 let g:syntastic_python_checkers = ['pep8']
 
 let g:syntastic_quiet_messages = {'regex': 'Line is too long\|Class has too many lines\|Missing top\-level class documen\|Method has too many lines\|Assignment Branch Condition\|Block has too many lines\|for an array of words\|Redundant .return.'}
+
+let @t="iimport ipdb; ipdb.set_trace()"
 
 syntax sync minlines=256
 " let g:syntastic_javascript_checkers = ['eslint']
