@@ -81,7 +81,7 @@ if has("gui_running")
   let s:changebg   = "#5f5f87"
 else
   let s:vmode      = "cterm"
-  let s:background = "234"
+  let s:background = "0"
   let s:foreground = "252"
   let s:window     = "239"
   let s:line       = "236"
@@ -92,13 +92,14 @@ else
   let s:comment    = "59"
   let s:error      = "52"
   let s:zentree    = "242"
-  
-  let s:pink       = "197"
-  let s:green      = "148"
-  let s:aqua       = "81"
+
+  let s:pink       = "198"
+  let s:green      = "41"
+  let s:aqua       = "86"
   let s:yellow     = "186"
+  let s:tan        = "180"
   let s:orange     = "208"
-  let s:purple     = "141"
+  let s:purple     = "164"
   let s:red        = "196"
 
   let s:addfg      = "193"
