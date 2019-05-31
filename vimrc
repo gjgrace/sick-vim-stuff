@@ -77,4 +77,9 @@ let g:lexima_enable_basic_rules = 1
 
 let @t="iimport ipdb; ipdb.set_trace()"
 
+let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
+if executable('ag')
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+endif
+
 " autocmd VimEnter * NERDTree

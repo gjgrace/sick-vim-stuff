@@ -10,7 +10,7 @@ set background=dark
 
 set guifont=Hack:h12
 
-set transparency=10
+set transparency=5
 " set blur=10
 
 runtime macros/matchit.vim
@@ -27,9 +27,9 @@ filetype plugin on " Enable filetype-specific plugins
 set autoindent
 
 :set expandtab
-:set tabstop=4
-:set shiftwidth=4
-:set softtabstop=4
+:set tabstop=2
+:set shiftwidth=2
+:set softtabstop=2
 
 :GitGutterDisable
 
@@ -50,6 +50,7 @@ map <C-i> <C-W>k
 map <C-j> <C-W>h
 map <C-l> <C-W>l
 map <C-n> :NERDTreeToggle<CR>
+map <C-h> \be
 
 :map Q <Nop>
 
@@ -75,11 +76,17 @@ let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 1
 let g:syntastic_ruby_checkers = ['rubocop']
-let g:syntastic_python_checkers = ['pep8']
+let g:syntastic_python_checkers = ['flake8']
+let g:syntastic_python_checker_args='--ignore=E121,E122,E123,E124,E125,E126,E127,E128,E241'
 
-let g:syntastic_quiet_messages = {'regex': 'Line is too long\|Class has too many lines\|Missing top\-level class documen\|Method has too many lines\|Assignment Branch Condition\|Block has too many lines\|for an array of words\|Redundant .return.'}
+let g:syntastic_quiet_messages = {'regex': 'Class has too many lines\|Missing top\-level class documen\|Method has too many lines\|Assignment Branch Condition\|Block has too many lines\|for an array of words\|Redundant .return.'}
 
 let @t="iimport ipdb; ipdb.set_trace()"
+
+let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
+if executable('ag')
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+endif
 
 syntax sync minlines=256
 " let g:syntastic_javascript_checkers = ['eslint']
