@@ -23,6 +23,11 @@ filetype plugin on " Enable filetype-specific plugins
 
 :filetype plugin on
 
+call plug#begin('~/.vim/plugged')
+Plug 'pangloss/vim-javascript'
+Plug 'maxmellon/vim-jsx-pretty'
+call plug#end()
+
 :set relativenumber
 :set number
 
