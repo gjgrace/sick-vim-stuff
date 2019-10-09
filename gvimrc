@@ -4,13 +4,15 @@
 filetype off
 execute pathogen#infect()
 
+let g:dracula_colorterm = 0
 syntax on
+" color dracula
 :colorscheme monokai
 set background=dark
 
 set guifont=Hack:h12
 
-set transparency=5
+set transparency=0
 " set blur=10
 
 runtime macros/matchit.vim

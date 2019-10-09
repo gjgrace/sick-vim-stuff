@@ -13,3 +13,6 @@
 [submodule "/Users/gavingrace-lendingloop/.vim/bundle/matchit"]
 	path = /Users/gavingrace-lendingloop/.vim/bundle/matchit
 	url = https://github.com/vimtaku/hl_matchit.vim.git
+[submodule "bundle/dracula-theme"]
+	path = bundle/dracula-theme
+	url = git@github.com:dracula/vim.git
