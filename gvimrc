@@ -6,9 +6,12 @@ execute pathogen#infect()
 
 let g:dracula_colorterm = 0
 syntax on
-" color dracula
-:colorscheme monokai
-set background=dark
+
+" set background=dark
+" colorscheme dracula
+" colorscheme monokai
+" colorscheme space-vim-dark
+colorscheme gotham
 
 set guifont=Hack:h12
 
@@ -26,6 +29,9 @@ filetype plugin on " Enable filetype-specific plugins
 call plug#begin('~/.vim/plugged')
 Plug 'pangloss/vim-javascript'
 Plug 'maxmellon/vim-jsx-pretty'
+Plug 'liuchengxu/space-vim-dark'
+Plug 'whatyouhide/vim-gotham'
+Plug 'christoomey/vim-tmux-navigator'
 call plug#end()
 
 :set relativenumber
