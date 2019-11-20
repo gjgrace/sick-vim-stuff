@@ -32,6 +32,7 @@ Plug 'maxmellon/vim-jsx-pretty'
 Plug 'liuchengxu/space-vim-dark'
 Plug 'whatyouhide/vim-gotham'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'mhinz/vim-startify'
 call plug#end()
 
 :set relativenumber
