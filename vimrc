@@ -8,20 +8,35 @@ syntax on
 
 " set background=dark
 " colorscheme dracula
-" colorscheme monokai
-" colorscheme space-vim-dark
 colorscheme gotham
+" colorscheme space-vim-dark
+"colorscheme gotham
 
 set guifont=Hack:h12
 set background=dark
 set t_Co=256
 
+set mouse=a
+
 runtime macros/matchit.vim
 
 :filetype plugin on
 
+call plug#begin('~/.vim/plugged')
+Plug 'arcticicestudio/nord-vim'
+Plug 'pangloss/vim-javascript'
+Plug 'maxmellon/vim-jsx-pretty'
+Plug 'liuchengxu/space-vim-dark'
+Plug 'whatyouhide/vim-gotham'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'mhinz/vim-startify'
+call plug#end()
+
 :set relativenumber 
 :set number
+
+let NERDTreeShowLineNumbers=1
+autocmd FileType nerdtree setlocal relativenumber
 
 set autoindent
 
@@ -46,13 +61,10 @@ map <C-k> <C-W>j
 map <C-i> <C-W>k
 map <C-j> <C-W>h
 map <C-l> <C-W>l
-map <C-n> :NERDTreeToggle<CR>
 map <C-w>s :split<CR>
 map <C-w>v :vsplit<CR>
 
 :map Q <Nop>
-
-syntax on " Enable syntax highlighting
 
 let NERDTreeIgnore = ['\.pyc$','^__init__\.py$']
 let g:ctrlp_custom_ignore = '\.pyc$\|__init__\.py$|spec/vcr/**'
@@ -64,15 +76,6 @@ let g:indentLine_leadingSpaceChar = '.'
 let g:bufExplorerShowRelativePath = 1
 
 let g:hl_matchit_enable_on_vim_startup = 1
-
-call plug#begin('~/.vim/plugged')
-Plug 'pangloss/vim-javascript'
-Plug 'maxmellon/vim-jsx-pretty'
-Plug 'liuchengxu/space-vim-dark'
-Plug 'whatyouhide/vim-gotham'
-Plug 'christoomey/vim-tmux-navigator'
-Plug 'mhinz/vim-startify'
-call plug#end()
 
 :set ic
 
@@ -125,3 +128,10 @@ inoremap <C-U> <Esc>:call SmoothScroll(1)<Enter>i
 inoremap <C-D> <Esc>:call SmoothScroll(0)<Enter>i
 
 " autocmd VimEnter * NERDTree
+
+autocmd VimEnter *
+            \   if !argc()
+            \ |   Startify
+            \ |   NERDTree
+            \ |   wincmd w
+            \ | endif

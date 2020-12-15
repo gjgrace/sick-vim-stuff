@@ -4,14 +4,15 @@
 filetype off
 execute pathogen#infect()
 
+
 let g:dracula_colorterm = 0
 syntax on
 
 " set background=dark
-" colorscheme dracula
+colorscheme dracula
 " colorscheme monokai
 " colorscheme space-vim-dark
-colorscheme gotham
+" colorscheme gotham
 
 set guifont=Hack:h12
 
@@ -27,12 +28,9 @@ filetype plugin on " Enable filetype-specific plugins
 :filetype plugin on
 
 call plug#begin('~/.vim/plugged')
-Plug 'pangloss/vim-javascript'
-Plug 'maxmellon/vim-jsx-pretty'
-Plug 'liuchengxu/space-vim-dark'
-Plug 'whatyouhide/vim-gotham'
-Plug 'christoomey/vim-tmux-navigator'
+Plug 'arcticicestudio/nord-vim'
 Plug 'mhinz/vim-startify'
+Plug 'dracula/vim'
 call plug#end()
 
 :set relativenumber
